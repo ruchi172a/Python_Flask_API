@@ -1,0 +1,8 @@
+flask
+flask-smorest  #help us write REST APIs more easily, and generate documentation for us.
+python-dotenv  #easier for us to load environment variables and use the .flaskenv file.
+sqlalchemy
+flask-sqlalchemy
+flask-jwt-extended
+passlib #used to hash passwords/unreadable
+flask-migrate #used for migrating to DB
