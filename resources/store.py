@@ -2,10 +2,10 @@ import uuid  #Used to generate unique store IDs
 from flask.views import MethodView  #Base class for defining class-based views.
 from flask_smorest import Blueprint, abort  #Blueprint:Used to modularize routes. , abort to send error message
 #from DB import stores
-from resources.schemas import StoreSchema  #A schema (probably Marshmallow) that validates and serializes store data.
+from schemas import StoreSchema  #A schema (probably Marshmallow) that validates and serializes store data.
 
 from sqlalchemy.exc import SQLAlchemyError, IntegrityError
-from resources.DB import db
+from DB import db
 from models import StoreModel
 
 blp = Blueprint("stores", __name__, description="Operations on stores")  #blp is a Blueprint named "stores". ,description helps in API documentation (via OpenAPI / Swagger).

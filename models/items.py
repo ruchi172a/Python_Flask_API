@@ -1,4 +1,4 @@
-from resources.DB import db
+from DB import db
 class ItemModel(db.Model):
     __tablename__ = "items"  #this is the table name
  

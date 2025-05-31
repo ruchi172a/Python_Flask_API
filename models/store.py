@@ -1,4 +1,4 @@
-from resources.DB import db
+from DB import db
 
 class StoreModel(db.Model):
     __tablename__ = "stores"  #Table store and it's columns

@@ -2,9 +2,9 @@ from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 from sqlalchemy.exc import SQLAlchemyError
 
-from resources.DB import db
+from DB import db
 from models import TagModel, StoreModel, ItemModel
-from resources.schemas import TagSchema, TagAndItemSchema
+from schemas import TagSchema, TagAndItemSchema
 
 blp = Blueprint("Tags", "tags", description="Operations on tags")
 

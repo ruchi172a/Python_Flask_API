@@ -2,9 +2,9 @@ from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 from passlib.hash import pbkdf2_sha256  #used to hashing password (hashing algorithm) , IF user enters 123  from postman in password ,we will has it and save it in our database
 
-from resources.DB import db
+from DB import db
 from models import UserModel
-from resources.schemas import UserSchema
+from schemas import UserSchema
 
 from flask_jwt_extended import create_access_token ,get_jwt,jwt_required , create_refresh_token,get_jwt_identity
 from blocklist import BLOCKLIST

@@ -4,7 +4,7 @@ from flask_smorest import Api  # for cleaner API building and OpenAPI docs
 from resources.item import blp as ItemBlueprint   #blueprint to split routes into modules
 from resources.store import blp as StoreBlueprint  #Import route definitions from resources/item.py and resources/store.py, where blp (Blueprint) is defined.
 import models
-from resources.DB import db
+from DB import db
 import os
 from resources.tag import blp as TagBlueprint
 from flask_jwt_extended import JWTManager
